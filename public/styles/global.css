@@ -4,6 +4,7 @@
 }
 
 html {
+  background-color: #ffffff;
   font-size: 10px;
 }
 
@@ -17,7 +18,7 @@ html {
 /* Small device (mobile) */
 @media screen and (max-width: 480px) {
   html {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 

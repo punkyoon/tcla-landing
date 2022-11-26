@@ -28,8 +28,6 @@ export default function TempDocument(_: DocumentInitialProps) {
         <meta property='twitter:description' content='Welcome ! 환영하는 TCLA !' />
         <meta property='twitter:image' content={`${sitePrefix}/images/og_description.png`} />
 
-        <title>Welcome TCLA</title>
-
         {/* favicon */}
         <link rel='manifest' href={`${sitePrefix}/site.webmanifest`} />
         <link rel='icon' type='image/x-icon' href={`${sitePrefix}/favicon.ico`} />
