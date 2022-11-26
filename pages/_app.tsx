@@ -10,6 +10,8 @@ export default function TempApp({ Component, pageProps }: AppProps) {
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1, viewport-fit=cover' />
         <meta name='description' content='TCLA 랜딩페이지' />
+
+        <title>TCLA</title>
       </Head>
       <Component {...pageProps} />
     </>
