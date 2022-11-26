@@ -1,0 +1,39 @@
+{
+  "name": "tcla-landing",
+  "version": "0.1.0",
+  "description": "Landing page",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/punkyoon/tcla-landing.git"
+  },
+  "author": "Jiyoon Ha",
+  "bugs": {
+    "url": "https://github.com/punkyoon/tcla-landing/issues"
+  },
+  "homepage": "https://github.com/punkyoon/tcla-landing#readme",
+  "dependencies": {
+    "@emotion/cache": "^11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "next": "^13.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "^13.0.3",
+    "typescript": "^4.8.4"
+  }
+}

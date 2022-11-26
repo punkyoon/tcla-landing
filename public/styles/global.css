@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: SourceHanSansK, malgun, sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* Midium device (tablet) */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Small device (mobile) */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+/* X-Small device */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: scroll;
+  padding: 0;
+  user-select: none;
+}
+
+button {
+  -webkit-appearance: none;
+
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  appearance: none;
+  background: none;
+  border: none;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+img,
+svg {
+  pointer-events: none;
+}
+
+button,
+div,
+span,
+img,
+svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+
+  user-select: none;
+}
