@@ -9,23 +9,23 @@ export default function TempDocument(_: DocumentInitialProps) {
         <meta charSet='utf-8' />
 
         {/* basic description */}
-        <meta name='title' content='Welcome TCLA'/ >
-        <meta name='description' content='Welcome ! 환영하는 TCLA !' />
+        <meta name='title' content='Tightly Coupled Losely Aligned'/ >
+        <meta name='description' content='환영하는! 티시-엘-에이' />
 
         {/* open graph and facebook description */}
         <meta property='og:type' content='website'/>
         {/* TODO: 도메인 사서 링크 넣어두기 */}
         {/* <meta property='og:url' content='' /> */}
-        <meta property='og:title' content='Welcome TCLA' />
-        <meta property='og:description' content='Welcome ! 환영하는 TCLA !' />
+        <meta property='og:title' content='Tightly Coupled Losely Aligned' />
+        <meta property='og:description' content='환영하는! 티시-엘-에이' />
         <meta property='og:image' content={`${sitePrefix}/images/og_description.png`} />
         
         {/* twitter description */}
-        <meta property='twitter:card' content='TCLA 환영하는 welcome' />
+        <meta property='twitter:card' content='환영하는! 티시-엘-에이' />
         {/* TODO: 도메인 사서 링크 넣어두기 */}
         {/* <meta property='twitter:url' content='' /> */}
-        <meta property='twitter:title' content='Welcome TCLA' />
-        <meta property='twitter:description' content='Welcome ! 환영하는 TCLA !' />
+        <meta property='twitter:title' content='Tightly Coupled Losely Aligned' />
+        <meta property='twitter:description' content='환영하는! 티시-엘-에이' />
         <meta property='twitter:image' content={`${sitePrefix}/images/og_description.png`} />
 
         {/* favicon */}

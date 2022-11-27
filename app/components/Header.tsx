@@ -17,6 +17,10 @@ const Base = styled.div`
   display: flex;
   justify-content: center;
   padding: 1.5rem 0rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 9999;
 `;
 const HeaderImageWrapper = styled.div`
   height: 3rem;
