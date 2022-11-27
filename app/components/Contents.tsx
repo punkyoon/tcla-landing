@@ -28,6 +28,8 @@ export default function Contents() {
         </JejuPositionWrapper>
       </JejuWrapper>
 
+      <XboxImage src={`${sitePrefix}/images/xbox.png`} />
+
       <HoodieLink href='https://forms.gle/YRBcnZJb9JcHZYNz7' target='_blank' rel='noopener noreferrer'>
         <TclaHoodieImage src={`${sitePrefix}/images/tcla_hoodie_black.png`} />
       </HoodieLink>
@@ -143,6 +145,11 @@ const JejuText = styled.p`
     50%  { opacity:0; }
     100% { opacity:1; }
   }
+`;
+const XboxImage = styled.img`
+  position: absolute;
+  left: 8rem;
+  bottom: 103rem;
 `;
 const Padding = styled.div`
   height: 97rem;
