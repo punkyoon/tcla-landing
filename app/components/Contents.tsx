@@ -59,11 +59,27 @@ const TclaImage = styled.img`
 `;
 const TclaBearImage = styled.img`
   padding-bottom: 8.2rem;
+
+  animation: rotate_bear 2.6s ease-out infinite;
+
+  @keyframes rotate_bear {
+    0% { transform: rotate(40deg); }
+    50% { transform: rotate(-40deg); }
+    100% { transform: rotate(40deg); }
+  }
 `;
 const TclaMtmBlueImage = styled.img`
   position: absolute;
   right: 2rem;
   top: 11rem;
+
+  animation: rotate_y 2s linear infinite;
+
+  @keyframes rotate_y {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(360deg); }
+    100% { transform: rotateY(0deg); }
+  }
 `;
 const CoolImage = styled.img`
   position: absolute;
