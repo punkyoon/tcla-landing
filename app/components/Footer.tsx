@@ -5,7 +5,7 @@ export default function Footer() {
     <Base>
       <Title>(주)티씨엘에이{'\n'}Tightly Coupled Loosely Aligned</Title>
       <Address>서울시 강남구 테헤란로 98길 8  | 대표이사 : 최재영  |  개인정보책임자 : 박형기 | 사업자번호 : 100-18-01818 | 통신판매업신고 : 제2018-서울강남-1818</Address>
-      <CustomerServiceButton>고객센터</CustomerServiceButton>
+      <CustomerServiceLink href='https://open.kakao.com/o/saXuxoQe' target='_blank' rel='noopener noreferrer'>고객센터</CustomerServiceLink>
       <Copyright>Copyright © TCLA, Inc. All Rights Reserved.</Copyright>
     </Base>
   );
@@ -30,7 +30,7 @@ const Address = styled.p`
   font-size: 2rem;
   letter-spacing: -0.01em;
 `;
-const CustomerServiceButton = styled.button`
+const CustomerServiceLink = styled.a`
   align-items: center;
   border: 1px solid #DADADA;
   border-radius: 8px;

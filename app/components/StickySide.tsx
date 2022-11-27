@@ -19,7 +19,7 @@ export default function StickySide() {
 const Base = styled.div`
   position: absolute;
   left: 0;
-  top: 80rem;
+  top: 70rem;
 `;
 const CatButton = styled.button`
   cursor: pointer;
