@@ -1,7 +1,10 @@
 import styled from '@emotion/styled';
+import { useState } from 'react';
 import sitePrefix from '~/sitePrefix';
 
 export default function Contents() {
+  const [toggledGmg, setToggledGmg] = useState<boolean>(false);
+
   return (
     <Base>
       <TclaImage src={`${sitePrefix}/images/tightly_coupled_loosely_aligned.png`} />
@@ -32,7 +35,14 @@ export default function Contents() {
       <FestivalLink href='https://docs.google.com/forms/d/e/1FAIpQLSexWaGGA28Adw0I5CIxLsilsgnMmlzfpVA5LmHkIZs-OvuYNQ/viewform' target='_blank' rel='noopener noreferrer'>
         <HmgImage src={`${sitePrefix}/images/hmh.png`} />
       </FestivalLink>
-      <GmgImage src={`${sitePrefix}/images/gmg.png`} />
+
+      <GmgButton onClick={() => setToggledGmg(!toggledGmg)}>
+        {toggledGmg ? (
+          <RealGmgImage src={`${sitePrefix}/images/real_gmg.png`} />
+        ) : (
+          <GmgImage src={`${sitePrefix}/images/gmg.png`} />
+        )}
+      </GmgButton>
     </Base>
   );
 }
@@ -128,7 +138,7 @@ const WelcomeImage = styled.img`
   margin: 0 auto;
   bottom: 84rem;
 
-  @keyframes rotate_image{
+  @keyframes rotate_image {
     100% {
       transform: rotate(360deg);
     }
@@ -146,10 +156,33 @@ const FestivalLink = styled.a`
   bottom: 44rem;
 `;
 const HmgImage = styled.img``;
-const GmgImage = styled.img`
-  width: 17rem;
-  height: 6rem;
+const GmgButton = styled.button`
   position: absolute;
   right: 2rem;
   bottom: 65rem;
+  cursor: pointer;
+
+  animation: bounce 3s ease-in infinite;
+
+  @keyframes bounce {
+    0%   { bottom: 65rem; }
+    50%  { bottom: 40rem; }
+    100% { bottom: 65rem; }
+  }
+`;
+const RealGmgImage = styled.img`
+  width: 17rem;
+  height: 26rem;
+  
+  animation: height_bounce 3s linear infinite;
+
+  @keyframes height_bounce {
+    0%   { height: 26rem; }
+    50%  { height: 10rem; }
+    100% { height: 26rem; }
+  }
+`;
+const GmgImage = styled.img`
+  width: 17rem;
+  height: 6rem;
 `;
