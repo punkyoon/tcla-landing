@@ -7,19 +7,26 @@ export default function Contents() {
       <TclaImage src={`${sitePrefix}/images/tightly_coupled_loosely_aligned.png`} />
       <TclaBearImage src={`${sitePrefix}/images/tcla_bear.png`} />
       <TclaMtmBlueImage src={`${sitePrefix}/images/tcla_mtm_blue.png`} />
+
       <CoolImage src={`${sitePrefix}/images/cool.png`} />
       <CoolTclaImage src={`${sitePrefix}/images/cool_tcla.png`} />
 
-<JejuWrapper>
-      <JejuPositionWrapper>
-        <JejuImage src={`${sitePrefix}/images/jeju.png`} />
-        <JejuText>슉 슈슉 시 시발럼아 슈슉 슉 슉시 시벌람아 슉 시발 슈슉 슉 시 시발 슉 럼아 슈슉 시발 럼아 슉 슈슉 슉 슉 시 시발럼 아슉 슈슉 슉 시벌람아 슉슉 슈슉 시 시발럼아 슈슉 슉 슉시 시발럼아 슉 시발 슈슉 슉 시 시발 슉 럼아 슈슉 시발</JejuText>
-      </JejuPositionWrapper>
+      <JejuWrapper>
+        <JejuPositionWrapper>
+          <JejuImage src={`${sitePrefix}/images/jeju.png`} />
+          <JejuText>슉 슈슉 시 시발럼아 슈슉 슉 슉시 시벌람아 슉 시발 슈슉 슉 시 시발 슉 럼아 슈슉 시발 럼아 슉 슈슉 슉 슉 시 시발럼 아슉 슈슉 슉 시벌람아 슉슉 슈슉 시 시발럼아 슈슉 슉 슉시 시발럼아 슉 시발 슈슉 슉 시 시발 슉 럼아 슈슉 시발</JejuText>
+        </JejuPositionWrapper>
       </JejuWrapper>
-      <TclaHoodieImage src={`${sitePrefix}/images/tcla_hoodie_black.png`} />
+
+      <HoodieLink href='https://forms.gle/YRBcnZJb9JcHZYNz7' target='_blank' rel='noopener noreferrer'>
+        <TclaHoodieImage src={`${sitePrefix}/images/tcla_hoodie_black.png`} />
+      </HoodieLink>
       <WelcomeImage src={`${sitePrefix}/images/welcome.png`} />
+
       <Padding />
+      
       <TclaMtmBlackImage src={`${sitePrefix}/images/tcla_mtm_black.png`} />
+
       <HmgImage src={`${sitePrefix}/images/hmh.png`} />
       <GmgImage src={`${sitePrefix}/images/gmg.png`} />
     </Base>
@@ -101,11 +108,13 @@ const JejuText = styled.p`
 const Padding = styled.div`
   height: 97rem;
 `;
-const TclaHoodieImage = styled.img`
+const HoodieLink = styled.a`
   position: absolute;
   right: 7rem;
   top: 44rem;
+  border: 0.4rem solid #9cf7ed
 `;
+const TclaHoodieImage = styled.img``;
 const WelcomeImage = styled.img`
   animation: rotate_image 6s linear infinite;
   transform-origin: 50% 50%;
