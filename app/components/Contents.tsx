@@ -25,9 +25,13 @@ export default function Contents() {
 
       <Padding />
       
-      <TclaMtmBlackImage src={`${sitePrefix}/images/tcla_mtm_black.png`} />
+      <MtmLink href='https://docs.google.com/forms/d/e/1FAIpQLSeXu41Frc6yN6FQOgO7kkKs-h7KX_kN_a9QV9m3P8ivE_eJnA/viewform' target='_blank' rel='noopener noreferrer'>
+        <TclaMtmBlackImage src={`${sitePrefix}/images/tcla_mtm_black.png`} />
+      </MtmLink>
 
-      <HmgImage src={`${sitePrefix}/images/hmh.png`} />
+      <FestivalLink href='https://docs.google.com/forms/d/e/1FAIpQLSexWaGGA28Adw0I5CIxLsilsgnMmlzfpVA5LmHkIZs-OvuYNQ/viewform' target='_blank' rel='noopener noreferrer'>
+        <HmgImage src={`${sitePrefix}/images/hmh.png`} />
+      </FestivalLink>
       <GmgImage src={`${sitePrefix}/images/gmg.png`} />
     </Base>
   );
@@ -130,16 +134,18 @@ const WelcomeImage = styled.img`
     }
   }
 `;
-const TclaMtmBlackImage = styled.img`
+const MtmLink = styled.a`
   position: absolute;
   left: 7rem;
   bottom: 48rem;
 `;
-const HmgImage = styled.img`
+const TclaMtmBlackImage = styled.img``;
+const FestivalLink = styled.a`
   position: absolute;
   left: 0;
   bottom: 44rem;
 `;
+const HmgImage = styled.img``;
 const GmgImage = styled.img`
   width: 17rem;
   height: 6rem;
