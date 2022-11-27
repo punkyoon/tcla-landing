@@ -18,7 +18,7 @@ export default function TempDocument(_: DocumentInitialProps) {
         {/* <meta property='og:url' content='' /> */}
         <meta property='og:title' content='Tightly Coupled Losely Aligned' />
         <meta property='og:description' content='환영하는! 티시-엘-에이' />
-        <meta property='og:image' content={`${sitePrefix}/images/og_description.png`} />
+        <meta property='og:image' content={`${sitePrefix}/images/og_description.jpg`} />
         
         {/* twitter description */}
         <meta property='twitter:card' content='환영하는! 티시-엘-에이' />
@@ -26,7 +26,7 @@ export default function TempDocument(_: DocumentInitialProps) {
         {/* <meta property='twitter:url' content='' /> */}
         <meta property='twitter:title' content='Tightly Coupled Losely Aligned' />
         <meta property='twitter:description' content='환영하는! 티시-엘-에이' />
-        <meta property='twitter:image' content={`${sitePrefix}/images/og_description.png`} />
+        <meta property='twitter:image' content={`${sitePrefix}/images/og_description.jpg`} />
 
         {/* favicon */}
         <link rel='manifest' href={`${sitePrefix}/site.webmanifest`} />
