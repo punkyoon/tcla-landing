@@ -5,6 +5,11 @@ import sitePrefix from '~/sitePrefix';
 export default function Contents() {
   const [toggledGmg, setToggledGmg] = useState<boolean>(false);
 
+  const onClickJejuButton = () => {
+    const shookAudio = new Audio(`${sitePrefix}/audio/shook.mp3`);
+    shookAudio.play();
+  }
+
   return (
     <Base>
       <TclaImage src={`${sitePrefix}/images/tightly_coupled_loosely_aligned.png`} />
@@ -16,7 +21,9 @@ export default function Contents() {
 
       <JejuWrapper>
         <JejuPositionWrapper>
-          <JejuImage src={`${sitePrefix}/images/jeju.png`} />
+          <JejuButton onClick={onClickJejuButton}>
+            <JejuImage src={`${sitePrefix}/images/jeju.png`} />
+          </JejuButton>
           <JejuText>슉 슈슉 시 시발럼아 슈슉 슉 슉시 시벌람아 슉 시발 슈슉 슉 시 시발 슉 럼아 슈슉 시발 럼아 슉 슈슉 슉 슉 시 시발럼 아슉 슈슉 슉 시벌람아 슉슉 슈슉 시 시발럼아 슈슉 슉 슉시 시발럼아 슉 시발 슈슉 슉 시 시발 슉 럼아 슈슉 시발</JejuText>
         </JejuPositionWrapper>
       </JejuWrapper>
@@ -117,9 +124,11 @@ const JejuPositionWrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const JejuImage = styled.img`
+const JejuButton = styled.button`
+  cursor: pointer;
   padding: 0 2rem;
 `;
+const JejuImage = styled.img``;
 const JejuText = styled.p`
   color: #000000;
   font-style: italic;
